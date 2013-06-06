@@ -1,35 +1,37 @@
 class Dashing.Swoop extends Dashing.Widget
+  @accessor 'current', Dashing.AnimatedValue
+  
+  @accessor 'counter', ->
+    if @get('count')
+      number = parseInt(@get('count'))
+      number
+    else
+      "1"
 
-  @accessor 'current', ->
-    return @get('displayedValue') if @get('displayedValue')
-    points = @get('points')
-    if points
-      points[points.length - 1].y
+  @accessor 'raw', ->
+    if @get('raw')
+      @get('raw').to_s
+    else
+      'no raw'
 
-  ready: ->
-    container = $(@node).parent()
-    # Gross hacks. Let's fix this.
-    width = (Dashing.widget_base_dimensions[0] * container.data("sizex")) + Dashing.widget_margins[0] * 2 * (container.data("sizex") - 1)
-    height = (Dashing.widget_base_dimensions[1] * container.data("sizey"))
-    @graph = new Rickshaw.Graph(
-      element: @node
-      width: width
-      height: height
-      series: [
-        {
-        color: "#fff",
-        data: [{x:0, y:0}]
-        }
-      ]
-    )
+  @accessor 'difference', ->
+    if @get('last')
+      last = parseInt(@get('last'))
+      current = parseInt(@get('current'))
+      if last != 0
+        diff = Math.abs(Math.round((current - last) / last * 100))
+        "#{diff}%"
+    else
+      ""
 
-    @graph.series[0].data = @get('points') if @get('points')
+  @accessor 'arrow', ->
+    if @get('last')
+      if parseInt(@get('current')) > parseInt(@get('last')) then 'icon-arrow-up' else 'icon-arrow-down'
 
-    x_axis = new Rickshaw.Graph.Axis.Time(graph: @graph)
-    y_axis = new Rickshaw.Graph.Axis.Y(graph: @graph, tickFormat: Rickshaw.Fixtures.Number.formatKMBT)
-    @graph.render()
-
-  onData: (data) ->
-    if @graph
-      @graph.series[0].data = data.points
-      @graph.render()
+#  onData: (data) ->
+#    if data.status
+#      # clear existing "status-*" classes
+#      $(@get('node')).attr 'class', (i,c) ->
+#        c.replace /\bstatus-\S+/g, ''
+#      # add new class
+#      $(@get('node')).addClass "status-#{data.status}"

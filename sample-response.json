@@ -1,0 +1,171 @@
+[
+    {
+        "_facilitators": [], 
+        "city": "Seattle", 
+        "country": "USA", 
+        "event_status": "G", 
+        "event_type": "Startup Weekend", 
+        "eventbrite_url": "http://www.eventbrite.com/event/6062530191", 
+        "facilitators": [
+            {
+                "_id": "5011b56e91ac880200000c4b", 
+                "account_exists": true, 
+                "community_role": "Facilitator", 
+                "email": "zachary@liffft.com", 
+                "first_name": "Zac", 
+                "last_name": "Cohn", 
+                "sub_role": ""
+            }
+        ], 
+        "financial_status": "OPEN", 
+        "id": 1497, 
+        "language": "English", 
+        "location": {
+            "lat": 47.6062095, 
+            "lng": -122.3320708
+        }, 
+        "main_point_of_contact": "seattle@startupweekend.org", 
+        "manager": "chet@startupweekend.org", 
+        "nickname": "", 
+        "organizers": [
+            {
+                "name": "Amyr Haq"
+            }, 
+            {
+                "name": "Hakonn Verespej"
+            }, 
+            {
+                "name": "Anupam Mishra"
+            }
+        ], 
+        "showDistance": false, 
+        "start_date": "2013-06-07T00:00:00.000Z", 
+        "state": "WA", 
+        "twitter_hashtag": "#swsea", 
+        "vertical": "", 
+        "website": "seattle.startupweekend.org"
+    }, 
+    {
+        "_facilitators": [], 
+        "city": "Seattle", 
+        "country": "USA", 
+        "event_status": "T", 
+        "event_type": "Startup Weekend", 
+        "eventbrite_url": "http://www.eventbrite.com/event/6456251823", 
+        "facilitators": [
+            {
+                "_id": "5029bfad9c398d02000009aa", 
+                "account_exists": true, 
+                "community_role": "Facilitator", 
+                "email": "johnmorefield@startupweekend.org", 
+                "first_name": "John", 
+                "last_name": "Morefield", 
+                "sub_role": ""
+            }
+        ], 
+        "financial_status": "OPEN", 
+        "id": 1903, 
+        "language": "English", 
+        "location": {
+            "lat": 47.6062095, 
+            "lng": -122.3320708
+        }, 
+        "main_point_of_contact": "seattlemaker@startupweekend.org", 
+        "manager": "chet@startupweekend.org", 
+        "nickname": "", 
+        "organizers": [
+            {
+                "name": "Monica Houston"
+            }, 
+            {
+                "name": "Hakon Verespej"
+            }, 
+            {
+                "name": "Bonnie Mattson"
+            }, 
+            {
+                "name": "Brochington Stilley"
+            }, 
+            {
+                "name": "Gabe Pelegrin"
+            }, 
+            {
+                "name": "Joanna Lu"
+            }, 
+            {
+                "name": "Adam Philipp"
+            }, 
+            {
+                "name": "Marion Desmazieres"
+            }
+        ], 
+        "showDistance": false, 
+        "start_date": "2013-06-28T00:00:00.000Z", 
+        "state": "WA", 
+        "twitter_hashtag": "#swmaker", 
+        "vertical": "Maker", 
+        "website": "seattlemaker.startupweekend.org"
+    }, 
+    {
+        "_facilitators": [], 
+        "city": "Seattle", 
+        "country": "USA", 
+        "event_status": "N", 
+        "event_type": "Startup Weekend", 
+        "eventbrite_url": null, 
+        "facilitators": [], 
+        "financial_status": "OPEN", 
+        "id": 1962, 
+        "language": "English", 
+        "location": {
+            "lat": 47.6062095, 
+            "lng": -122.3320708
+        }, 
+        "main_point_of_contact": null, 
+        "manager": "chet@startupweekend.org", 
+        "nickname": "", 
+        "organizers": [], 
+        "showDistance": false, 
+        "start_date": "2013-09-13T00:00:00.000Z", 
+        "state": "WA", 
+        "twitter_hashtag": null, 
+        "vertical": "Health", 
+        "website": ""
+    }, 
+    {
+        "_facilitators": [], 
+        "city": "Seattle", 
+        "country": "USA", 
+        "event_status": "U", 
+        "event_type": "Startup Weekend", 
+        "eventbrite_url": "http://www.eventbrite.com/event/6894414379", 
+        "facilitators": [], 
+        "financial_status": "OPEN", 
+        "id": 2070, 
+        "language": "English", 
+        "location": {
+            "lat": 47.6062095, 
+            "lng": -122.3320708
+        }, 
+        "main_point_of_contact": null, 
+        "manager": "chet@startupweekend.org", 
+        "nickname": "", 
+        "organizers": [
+            {
+                "name": "Kartik Rishi"
+            }, 
+            {
+                "name": "VJ Rajpal"
+            }, 
+            {
+                "name": "Alex Diaz"
+            }
+        ], 
+        "showDistance": false, 
+        "start_date": "2013-10-04T00:00:00.000Z", 
+        "state": "WA", 
+        "twitter_hashtag": null, 
+        "vertical": "", 
+        "website": ""
+    }
+]
